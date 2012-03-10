@@ -23,7 +23,7 @@ $config['em_from_name'] = 'test';
 $config['em_to_email'] = 'test@test.com';
 $config['em_cc_email'] = '';
 $config['em_bcc_email'] = '';
-$config['em_subject'] = '';
+$config['em_subject'] = 'email_me default subject';
 
 // --------------------------------------------------------------------------
 

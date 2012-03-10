@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * email_me
+ * email_me_helper
  * 
  * email_me helper for email_me spark.
  * 
@@ -9,7 +9,7 @@
  * @link		http://mikefunk.com
  * @email		mike@mikefunk.com
  * 
- * @file		email_me.php
+ * @file		email_me_helper.php
  * @version		1.0.0
  * @date		03/10/2012
  * 
@@ -32,7 +32,7 @@ function email_me($message, $subject = '', $to = '')
 	$_ci =& get_instance();
 	$_ci->load->library('email');
 
-	// set email params and send
+	// set "from" email and name (name can be blank)
 	$_ci->email->from(config_item('em_from_email'), config_item('em_from_name'));
 	
 	// set "to" to param or config
@@ -67,5 +67,8 @@ function email_me($message, $subject = '', $to = '')
 	$_ci->email->message($message);
 	return $_ci->email->send();
 }
-/* End of file email_me.php */
-/* Location: ./email_me/helpers/email_me.php */
+
+// --------------------------------------------------------------------------
+
+/* End of file email_me_helper.php */
+/* Location: ./email_me/helpers/email_me_helper.php */
