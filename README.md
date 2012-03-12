@@ -23,7 +23,7 @@ Email yourself
     
 More options
 
-    email_me('a message', 'a subject', 'someone_else@test.com');
+    email_me('a message', 'a subject', 'to_email_address@test.com');
 
 
 ----------------------------
