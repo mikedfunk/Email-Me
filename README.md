@@ -31,6 +31,11 @@ More options
 Changelog
 ----------------------------
 
+**1.0.1**
+
+* Fixed potential carryover of email params from previous email class
+  use. Thanks to [Eclarian](https://github.com/Eclarianhttps://github.com/Eclarian).
+
 **1.0.0**
 
 * Initial Release

@@ -10,8 +10,8 @@
  * @email		mike@mikefunk.com
  * 
  * @file		autoload.php
- * @version		1.0.0
- * @date		03/10/2012
+ * @version		1.0.1
+ * @date		08/14/2012
  * 
  * Copyright (c) 2012
  */
