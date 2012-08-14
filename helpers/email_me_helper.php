@@ -31,7 +31,10 @@ function email_me($message, $subject = '', $to = '')
 	// load resources
 	$_ci =& get_instance();
 	$_ci->load->library('email');
-
+	
+	// Prevent bleed over if other emails are sent from this same object
+	$_ci->email->clear(TRUE);
+	
 	// set "from" email and name (name can be blank)
 	$_ci->email->from(config_item('em_from_email'), config_item('em_from_name'));
 	
